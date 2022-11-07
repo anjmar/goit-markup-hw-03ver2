@@ -32,14 +32,14 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /*outline: 1px dotted red;*/
+  outline: 1px dotted red;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
   margin-top: 0px;
   margin-bottom: 0px;
-  outline: 1px dashed red;
+  /*outline: 1px dashed red;*/
 }
 h1,
 h2,
@@ -65,12 +65,13 @@ p {
   color: var(--accent-text-color);
 }
 .page-header {
+  height: 80px;
   border-bottom: 1px solid #ececec;
 }
 .logo {
   margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 33px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--black-text-color);
   font-family: var(--logo-font-family);
   font-size: 26px;
@@ -86,13 +87,12 @@ p {
 }
 .main-nav {
   display: flex;
+  align-items: center;
 }
 .site-nav {
   display: flex;
 }
 .site-nav .item {
-  margin-top: 32px;
-  margin-bottom: 40px;
   margin-right: 50px;
 }
 .site-nav .item:last-child {
@@ -100,6 +100,7 @@ p {
 }
 .site-nav .link {
   display: block;
+  padding: 32px 0px;
 
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -116,11 +117,11 @@ p {
 }
 .auth-nav {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 .auth-nav .item {
-  margin-top: 32px;
-  margin-bottom: 40px;
+  padding: 32px 0px;
 }
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -142,9 +143,14 @@ p {
 .hero {
   text-align: center;
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 .hero-title {
-  margin-bottom: 30px;
+  width: 696px;
+  margin: auto;
+
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -154,6 +160,7 @@ p {
 }
 .hero-button {
   display: inline-block;
+  margin-top: 30px;
   min-width: 216px;
   padding: 10px 32px;
 
@@ -212,6 +219,7 @@ p {
   text-transform: uppercase;
 }
 .adjectives-text {
+  padding-bottom: 22px;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -238,6 +246,9 @@ p {
 }
 .works-type .item + .item {
   margin-left: 30px;
+}
+.works {
+  padding-bottom: 0;
 }
 /* -------------sectiong team---------*/
 .team {
@@ -278,8 +289,8 @@ p {
   background-color: var(--footer-background-color);
 }
 .footer-logo {
-  margin-top: 60px;
-  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 
   font-family: var(--logo-font-family);
   font-weight: 700;
@@ -291,10 +302,13 @@ p {
   color: var(--accent-text-color);
 }
 .address {
+  width: 231px;
+  padding-bottom: 60px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
+
 .address-item .item + .item {
   margin-top: 9px;
 }
@@ -308,8 +322,8 @@ p {
 
 /* ---------portfolio page---------*/
 .btn {
-  background: var(--secondary-background-color);
-  border-radius: 4px;
+  display: block;
+  padding: 6px 25px;
   font-family: inherit;
   font-style: inherit;
   font-weight: 500;
@@ -319,14 +333,14 @@ p {
   letter-spacing: inherit;
   cursor: pointer;
   color: var(--secondary-text-color);
+  background: var(--secondary-background-color);
+  border-radius: 4px;
+  border: 1px solid transparent;
 }
 .btn:hover,
 .btn:focus,
 .btn:active {
-  background: var(--accent-background-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  display: block;
   font-family: inherit;
   font-style: inherit;
   font-weight: 500;
@@ -336,11 +350,32 @@ p {
   letter-spacing: inherit;
   cursor: pointer;
   color: var(--white-text-color);
+  background: var(--accent-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: 1px solid transparent;
 }
-.proposition-item {
+.button-list .item {
+  display: flex;
+  margin-left: 0px;
+  margin-bottom: 50px;
+}
+.button-list .item + .item {
+  margin-left: 8px;
+}
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+
+/*.proposition-item {
   color: inherit;
-}
+}*/
 .proposition-title {
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -348,6 +383,26 @@ p {
   color: var(--secondary-text-color);
 }
 .proposition-text {
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-size: 16px;
   line-height: 1.87;
+  color: var(--primary-text-color);
+}
+.proposition-list .item {
+  display: flex;
+  width: calc((100-60px / 3));
+  margin: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #eeeeee;
+}
+/*.proposition-list .item:not(:nth-child(3n)) {
+  margin-right: 0;
+}*/
+.proposition-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
