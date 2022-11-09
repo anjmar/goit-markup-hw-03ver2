@@ -308,21 +308,20 @@ p {
 .address-text {
   color: var(--white-text-color);
   display: block;
-  padding-bottom: 9px;
 }
-/* .adress-list-item {
+.adress-list-item {
   margin-bottom: 9px;
 }
 .adress-list-item:last-child {
   margin: 0px;
-} */
+}
 .address-mail,
 .address-tel {
   color: rgba(255, 255, 255, 0.6);
 }
-.address-mail {
+/* .address-mail {
   padding-bottom: 9px;
-}
+} */
 
 /* ---------portfolio page---------*/
 .btn {
